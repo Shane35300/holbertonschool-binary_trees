@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_tree_t - function's name
+ * binary_tree_node - function's name
  * Description: add a new tree node
  * @parent: the node parent
  * @value: the value added in the new node

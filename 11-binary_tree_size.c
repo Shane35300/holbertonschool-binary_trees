@@ -12,18 +12,18 @@
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
-     size_t left_substree;
-    size_t right_substree;
-    size_t sizetree = 0;
+size_t left_substree;
+size_t right_substree;
+size_t sizetree = 0;
 
-    if (tree == NULL)
-        return (0);
+if (tree == NULL)
+return (0);
 
-    left_substree = binary_tree_size(tree->left);
-    right_substree = binary_tree_size(tree->right);
+left_substree = binary_tree_size(tree->left);
+right_substree = binary_tree_size(tree->right);
 
-         sizetree = left_substree +right_substree +1;
+sizetree = (left_substree + right_substree + 1);
 
-    return (sizetree);
+return (sizetree);
 
 }

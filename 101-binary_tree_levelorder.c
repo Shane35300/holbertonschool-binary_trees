@@ -38,8 +38,10 @@ size_t binary_tree_height(const binary_tree_t *tree)
  *Description: goes throught a binary tree using preorder
  *@tree: root
  *@func: the function to call for each node
+ *@i: the level pointed
  */
-void binary_tree_preorder_bis(const binary_tree_t *tree, void (*func)(int), size_t i)
+void binary_tree_preorder_bis(const binary_tree_t *tree,
+void (*func)(int), size_t i)
 {
 	size_t j = 0;
 	binary_tree_t *ptr = (binary_tree_t *)tree;
@@ -60,12 +62,12 @@ void binary_tree_preorder_bis(const binary_tree_t *tree, void (*func)(int), size
 	}
 	if (j == i)
 		func(tree->n);
-
-	return;
 }
 /**
- * Binary_tree_levelorder - name of the function
- * Description:
+ * binary_tree_levelorder - name of the function
+ * Description: give a level order
+ * @tree: the tree*
+ * @func: the function that print the value
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
@@ -79,5 +81,4 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 		binary_tree_preorder_bis(tree, func, i);
 		i++;
 	}
-	return;
 }

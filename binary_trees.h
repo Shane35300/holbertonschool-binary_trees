@@ -47,6 +47,8 @@ size_t calculate_tree_depth_bis(const binary_tree_t *tree);
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_preorder_bis(const binary_tree_t *tree, void (*func)(int), size_t i);
-
+int check_condition_2(const binary_tree_t *tree, size_t i);
+int check_condition_1(const binary_tree_t *tree, size_t i);
+int binary_tree_is_complete(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
